@@ -8,7 +8,7 @@
 
 Dino Ipsum is a lorem ipsum for dinosaur lovers and anyone who needs meaningless filler text for prototyping web pages.
 
-Check this Live server:(https://priyaraj7.github.io/Dino-Ipsum/dist/)
+[Click here](https://priyaraj7.github.io/Dino-Ipsum/dist/). to see Live Server
 
 ## Specifications:
 

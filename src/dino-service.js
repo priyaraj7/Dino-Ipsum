@@ -3,7 +3,8 @@ export class DinoService {
     try {
       let response = await fetch(
         //`http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${process.env.API_KEY}`
-        `http://dinoipsum.herokuapp.com/api/?format=json&paragraphs=${paragraphs}&words=${words}`
+        // `http://dinoipsum.herokuapp.com/api/?format=json&paragraphs=${paragraphs}&words=${words}`
+        `https://dinoipsum.herokuapp.com/api/?format=json&paragraphs=${paragraphs}&words=${words}`
       );
       let jsonifiedResponse;
       if (response.ok && response.status == 200) {

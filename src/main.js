@@ -3,7 +3,7 @@ import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css";
 
-import { DinoService } from "./../src/dino-service.js";
+import { DinoService } from "../src/dino-service.js";
 
 $(document).ready(function() {
   $("#weatherLocation").click(function() {

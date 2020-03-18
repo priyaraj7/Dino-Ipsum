@@ -4,11 +4,12 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css";
 
 import { DinoService } from "./../src/dino-service.js";
+import { loadOptions } from "@babel/core";
 
 $(document).ready(function() {
   $("#weatherLocation").click(function() {
     const paragraphs = $("#paragraph").val();
-    $("#paragraph").val("");
+    $("#paragraph").val(""); // for clearing the number
     const words = $("#words").val();
     $("#words").val("");
 
@@ -22,16 +23,18 @@ $(document).ready(function() {
       if (response) {
         //debugger;
         $(".output").empty();
-        for (let i = 0; i < response.length; i++) {
-          let result = `<p>${response[i].join(" ")}</p>`;
+
+        response.forEach(res => {
+          let result = `<p>${res.join(" ")}</p>`;
           $(".output").append(result);
-        }
+        });
       } else {
         $(".output").text(`There was an error handling your request.`);
-        //$(".showTemp").text(`Please check your inputs and try again!`);
       }
     }
   });
 });
-
-//const url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${process.env.API_KEY}`;
+//......using for loop
+// for (let i = 0; i < response.length; i++) {
+// let result = `<p>${response[i].join(" ")}</p>`;
+// $(".output").append(result);

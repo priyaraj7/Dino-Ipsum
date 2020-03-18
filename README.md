@@ -10,7 +10,7 @@ Dino Ipsum is a lorem ipsum for dinosaur lovers and anyone who needs meaningless
 
 ## Specifications:
 
-Input: 1 paragraphs and 2 words
+Input: 1 paragraphs and 2 words  
 Output: Nectosaurus Regnosaurus
 
 ## Setup/Installation Requirements

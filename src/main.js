@@ -4,7 +4,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css";
 
 import { DinoService } from "./../src/dino-service.js";
-import { loadOptions } from "@babel/core";
 
 $(document).ready(function() {
   $("#weatherLocation").click(function() {
@@ -21,7 +20,6 @@ $(document).ready(function() {
 
     function getElements(response) {
       if (response) {
-        //debugger;
         $(".output").empty();
 
         response.forEach(res => {
